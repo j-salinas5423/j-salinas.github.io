@@ -1,1 +1,57 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <title> DO IT! </title>
+    <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+      <h1 id="title" for="title"> Concerts & Holidays!! </h1>
+      <p id="description" for="description"> Bro we are only young once so LET'S GO AND LIVE LIFE!! </p>
+      <form action="https://api.web3forms.com/submit" method="POST" id="survey-form" >
+        <fieldset> 
+          <input type="hidden" name="access_key" value="c575ea6a-1f75-488a-aa40-e748f2101585">
+          <label id="name-label" for="name">Name: <input id="name" name="name" type="text" placeholder="First name" required /></label>
+            <label id="email-label" for="email">Email: <input id="email" name="emai" type="email" placeholder="someone@hotmail.com" required /></label>
+            <label id="number-label" for="age">Age: <input
+            id="number" name="age" type="number" min="18" max="100" placeholder="18+" required /></label>
+            </fieldset>
+            <fieldset>
+              <label for="dropdown">What is your dream holiday or concert?
+                <select id="dropdown" name="dropdown">
+                  <option value="">(select one)</option>
+                  <option value="Rolling-Loud">Rolling Loud</option>
+                  <option value="Japan">Japan</option>
+                  <option value="Monaco">Monaco</option>
+                  <option value="LA">Los Angeles</option>
+                  </select>
+                  </label>
+                  <fieldset>
+                    <legend>What concerts would you like to attend?</legend>
+                    <label for="feid"><input value="feid" id="feid" type="checkbox" name="checkbox" class="inline" checked />Feid</label>
+                    <label for="blessd"><input value="blessd" id="blessd" type="checkbox" name="checkbox" class="inline" />Blessd</label>
+                    <label for="ryan-castro"><input value="ryan-castro" id="ryan-castro" type="checkbox" name="checkbox" class="inline" />Ryan Castro</label>
+                    <label for="dei-v"><input value="dei-v" id="dei-v" type="checkbox" name="checkbox" class="inline" />Dei V</label>
+                    <label for="luar-la-l"><input value="luar-la-l" id="luar-la-l" type="checkbox" name="checkbox" class="inline" />Luar La L</label>
+                    <label for="travis-scott"><input value="travis-scott" id="travis-scott" type="checkbox" name="checkbox" class="inline" />Travis Scott</label>
+                    <label for="central-cee"><input value="central-cee" id="central-cee" type="checkbox" name="checkbox" class="inline" />Central Cee</label>
+                    <label for="d-block-europe"><input value="d-block-europe" id="d-block-europe" type="checkbox" name="checkbox" class="inline" />D Block Europe</label>
+                    <label for="j-balvin"><input value="j-balvin" id="j-balvin" type="checkbox" name="checkbox" class="inline" />J Balvin</label>
+                    <label for="aj-tracey"><input value="aj-tracey" id="aj-tracey" type="checkbox" name="checkbox" class="inline" />AJ Tracey</label>
+                    <label for="other"><input value="other" id="other" type="checkbox" name="checkbox" class="inline" />Other</label>
+                    <label for="checkbox">What cities or countries would you like to go on holidays? (check all that apply)
+                      </label> 
+                      <input value="trial" class="inline" id="checkbox" type="checkbox" name="checkbox"/> Rome
+                      <input value="design" class="inline" id="checkbox" type="checkbox" name="checkbox"/> Poland
+                      <input value="survey" class="inline" id="checkbox" type="checkbox" name="checkbox"/> Iceland
+                      <input value="replies" class="inline" id="checkbox" type="checkbox" name="checkbox"/> Norway
+                      <input value="courses" class="inline" id="checkbox" type="checkbox" name="checkbox"/> Los Angeles
+                      </label>
+                      <label for="suggestions">Any other concerts (festivals) or countries in mind suggest here:
+                        <textarea id="suggestions" name="suggestions" rows="4" cols="40" placeholder="Anywhere with you baby ;)"></textarea>
+                        </label>
+                        </fieldset>
+                        <input id="submit" type="submit" value="Submit" />
+                        </form>
+                        </body>
+                        </html>
