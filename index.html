@@ -2,12 +2,12 @@
 <html lang="eng">
   <head>
     <meta charset="UTF-8">
-    <title> DO IT! </title>
+    <title> Survey Form </title>
     <link rel="stylesheet" href="styles.css"/>
     </head>
     <body>
-      <h1 id="title" for="title"> Concerts & Holidays!! </h1>
-      <p id="description" for="description"> Bro we are only young once so LET'S GO AND LIVE LIFE!! </p>
+      <h1 id="title" for="title"> Registration Form </h1>
+      <p id="description" for="description"> Please fill out this form to get a much better experience using the service </p>
       <form action="https://api.web3forms.com/submit" method="POST" id="survey-form" >
         <fieldset> 
           <input type="hidden" name="access_key" value="c575ea6a-1f75-488a-aa40-e748f2101585">
@@ -17,38 +17,29 @@
             id="number" name="age" type="number" min="18" max="100" placeholder="18+" required /></label>
             </fieldset>
             <fieldset>
-              <label for="dropdown">What is your dream holiday or concert?
+             <label for="dropdown">Why did you choose us?
                 <select id="dropdown" name="dropdown">
                   <option value="">(select one)</option>
-                  <option value="Rolling-Loud">Rolling Loud</option>
-                  <option value="Japan">Japan</option>
-                  <option value="Monaco">Monaco</option>
-                  <option value="LA">Los Angeles</option>
+                  <option value="Better-value">Better value</option>
+                  <option value="Referal">Referred by a friend</option>
+                  <option value="Other">Other</option>
                   </select>
                   </label>
                   <fieldset>
-                    <legend>What concerts would you like to attend?</legend>
-                    <label for="feid"><input value="feid" id="feid" type="checkbox" name="checkbox" class="inline" checked />Feid</label>
-                    <label for="blessd"><input value="blessd" id="blessd" type="checkbox" name="checkbox" class="inline" />Blessd</label>
-                    <label for="ryan-castro"><input value="ryan-castro" id="ryan-castro" type="checkbox" name="checkbox" class="inline" />Ryan Castro</label>
-                    <label for="dei-v"><input value="dei-v" id="dei-v" type="checkbox" name="checkbox" class="inline" />Dei V</label>
-                    <label for="luar-la-l"><input value="luar-la-l" id="luar-la-l" type="checkbox" name="checkbox" class="inline" />Luar La L</label>
-                    <label for="travis-scott"><input value="travis-scott" id="travis-scott" type="checkbox" name="checkbox" class="inline" />Travis Scott</label>
-                    <label for="central-cee"><input value="central-cee" id="central-cee" type="checkbox" name="checkbox" class="inline" />Central Cee</label>
-                    <label for="d-block-europe"><input value="d-block-europe" id="d-block-europe" type="checkbox" name="checkbox" class="inline" />D Block Europe</label>
-                    <label for="j-balvin"><input value="j-balvin" id="j-balvin" type="checkbox" name="checkbox" class="inline" />J Balvin</label>
-                    <label for="aj-tracey"><input value="aj-tracey" id="aj-tracey" type="checkbox" name="checkbox" class="inline" />AJ Tracey</label>
-                    <label for="other"><input value="other" id="other" type="checkbox" name="checkbox" class="inline" />Other</label>
-                    <label for="checkbox">What cities or countries would you like to go on holidays? (check all that apply)
-                      </label> 
-                      <input value="trial" class="inline" id="checkbox" type="checkbox" name="checkbox"/> Rome
-                      <input value="design" class="inline" id="checkbox" type="checkbox" name="checkbox"/> Poland
-                      <input value="survey" class="inline" id="checkbox" type="checkbox" name="checkbox"/> Iceland
-                      <input value="replies" class="inline" id="checkbox" type="checkbox" name="checkbox"/> Norway
-                      <input value="courses" class="inline" id="checkbox" type="checkbox" name="checkbox"/> Los Angeles
+                    <legend>Reason for account creation (required)</legend>
+                    <label for="personal-choice"><input value="personal" id="personal-choice" type="radio" name="account-type" class="inline" checked /> Personal choice</label>
+                    <label for="business"><input value="business" id="business" type="radio" name="account-type" class="inline" />Business</label>
+                    <label for="for-the-free-trial"><input value="free-trial" id="for-the-free-trial" type="radio" name="account-type" class="inline" />For the free trial :)!</label>
+                    <label for="checkbox">What would you improve from this service? (check all that apply)
+                        </label>
+                      <input value="trial" class="inline" id="checkbox" type="checkbox" name="checkbox"/> Longer free trial
+                      <input value="design" class="inline" id="checkbox" type="checkbox" name="checkbox"/> Better designs
+                      <input value="survey" class="inline" id="checkbox" type="checkbox" name="checkbox"/> Shorter surveys
+                      <input value="replies" class="inline" id="checkbox" type="checkbox" name="checkbox"/> Quicker replies
+                      <input value="courses" class="inline" id="checkbox" type="checkbox" name="checkbox"/> More interactive courses
                       </label>
-                      <label for="suggestions">Any other concerts (festivals) or countries in mind suggest here:
-                        <textarea id="suggestions" name="suggestions" rows="4" cols="40" placeholder="Anywhere with you baby ;)"></textarea>
+                      <label for="suggestions">Any other comments:
+                        <textarea id="suggestions" name="suggestions" rows="2" cols="20" placeholder="More free trials :)"></textarea>
                         </label>
                         </fieldset>
                         <input id="submit" type="submit" value="Submit" />
